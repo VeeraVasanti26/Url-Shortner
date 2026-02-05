@@ -44,3 +44,75 @@ M --> S
 S --> C
 C --> A
 A --> U
+
+## 🔄 System Workflow (Step-by-Step)
+
+### 1. User Request
+- User sends a request to shorten a long URL.
+
+### 2. Rate Limiting
+- Requests are filtered to prevent abuse.
+
+### 3. URL Validation
+- Invalid URLs are rejected safely.
+
+### 4. Short Code Generation
+- A unique short code is generated.
+
+### 5. Database Storage
+- Original URL, short code, and analytics are stored in MongoDB.
+
+### 6. Redirection
+- Short URL redirects to the original URL.
+
+### 7. Click Tracking
+- Each redirect updates click count and visit history.
+
+---
+
+## 🛠️ Tech Stack
+
+### **Backend**
+- Node.js  
+- Express.js  
+
+### **Database**
+- MongoDB  
+- Mongoose  
+
+### **APIs**
+- RESTful APIs  
+
+### **Security & Middleware**
+- Express Rate Limit  
+- Input Validation  
+
+### **DevOps**
+- Docker  
+- Docker Compose  
+
+---
+
+## 📂 Project Structure
+
+```text
+├── src/
+│   ├── controllers/
+│   │   └── url.controller.js
+│   ├── models/
+│   │   └── url.model.js
+│   ├── routes/
+│   │   └── url.routes.js
+│   ├── config/
+│   │   ├── connect.js
+│   │   └── ratelimiter.js
+│   ├── utils/
+│   │   └── generateShortCode.js
+│   └── app.js
+│
+├── server.js
+├── Dockerfile
+├── docker-compose.yml
+├── package.json
+└── README.md
+
