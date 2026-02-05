@@ -117,4 +117,63 @@ A --> U
 ├── docker-compose.yml
 ├── package.json
 └── README.md
+```
+----------------------------
+## 🚀 How to Run Locally
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/url-shortener.git
+cd url-shortener
+```
+### 2️⃣ Install Dependencies
+```bash
+npm install
+```
+### 3️⃣ Setup Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+PORT=5000
+MONGO_URI=mongodb://localhost:27017/urlshortener
+```
+
+###4️⃣ Start the Server
+```
+npm start
+```
+
+###🐳 Run with Docker
+```
+Build and Run
+docker-compose up --build
+```
+
+###The API will be available at:
+```
+http://localhost:5000
+```
+###📌 API Endpoints
+```
+Create Short URL
+POST /api/url
+
+Redirect Short URL
+GET /:shortCode
+
+Get URL Analytics
+GET /api/url/analytics/:shortCode
+```
+## 📂 Features Summary
+
+- ✅ URL shortening  
+- ✅ Redirection handling  
+- ✅ Click analytics  
+- ✅ Rate limiting  
+- ✅ MongoDB indexing  
+- ✅ Dockerized deployment  
+- ✅ Resume-ready backend project  
+
+
 
