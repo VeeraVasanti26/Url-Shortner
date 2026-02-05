@@ -1,11 +1,5 @@
-You’re right 👍 — thanks for pointing it out.
-Below is **100% PURE MARKDOWN CODE ONLY**, from start to end.
-You can **copy-paste this entire block directly into `README.md`**.
-No normal text outside. No mixing.
 
----
-
-```md
+```
 # URL Shortener with Click Tracking
 
 This is a **backend-focused URL shortener service** built using **Node.js, Express.js, and MongoDB**, following **RESTful API design principles** and a clean **MVC-style project structure**.  
