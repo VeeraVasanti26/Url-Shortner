@@ -139,22 +139,22 @@ PORT=5000
 MONGO_URI=mongodb://localhost:27017/urlshortener
 ```
 
-###4️⃣ Start the Server
+### 4️⃣ Start the Server
 ```
 npm start
 ```
 
-###🐳 Run with Docker
+### 🐳 Run with Docker
 ```
 Build and Run
 docker-compose up --build
 ```
 
-###The API will be available at:
+### The API will be available at:
 ```
 http://localhost:5000
 ```
-###📌 API Endpoints
+### 📌 API Endpoints
 ```
 Create Short URL
 POST /api/url
