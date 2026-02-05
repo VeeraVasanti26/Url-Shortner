@@ -22,14 +22,14 @@ The project is **Dockerized** for consistent deployment and scalability.
 
 ---
 
-## 🧱 Tech Stack
+## Tech Stack
 
 **Backend:** Node.js, Express.js  
 **Database:** MongoDB  
 **ODM:** Mongoose  
 **APIs:** RESTful APIs  
-**Middleware:** Express Rate Limiter, Input Validation  
-**DevOps:** Docker, Docker Compose  
+**DevOps:** Docker, Docker Compose
+
 
 ---
 
